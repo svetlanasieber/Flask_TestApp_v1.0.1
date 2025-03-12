@@ -12,7 +12,7 @@ def divide(x, y):
         return "Error! Division by zero."
     return x / y
 
-# Only run the console interface when this file is run directly, not when imported
+
 if __name__ == "__main__":
     print("Simple Calculator")
     print("1. Add")
