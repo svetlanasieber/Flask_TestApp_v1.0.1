@@ -12,11 +12,11 @@ def calculate():
     try:
         data = request.get_json()
         
-        # Validate that all required data is present
+       
         if not data or 'num1' not in data or 'num2' not in data or 'operation' not in data:
             return jsonify({'error': 'Missing required parameters'}), 400
         
-        # Handle possible None or invalid values
+       
         try:
             num1 = float(data['num1']) if data['num1'] is not None else 0
             num2 = float(data['num2']) if data['num2'] is not None else 0
@@ -39,13 +39,13 @@ def calculate():
         else:
             return jsonify({'error': 'Invalid operation'}), 400
         
-        # Format result for display (avoid too many decimal places)
+      
         if isinstance(result, float):
-            # If result is a whole number, convert to int
+           
             if result.is_integer():
                 result = int(result)
             else:
-                # Limit to 8 decimal places and remove trailing zeros
+               
                 result = float(f"{result:.8f}".rstrip('0').rstrip('.') if '.' in f"{result:.8f}" else f"{result:.8f}")
         
         return jsonify({'result': result})
