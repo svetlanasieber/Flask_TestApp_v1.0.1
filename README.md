@@ -5,14 +5,6 @@
 [![Flask](https://img.shields.io/badge/Flask-2.3.3-red.svg)](https://flask.palletsprojects.com/)
 
 
-***********************************************************************************************************************************
-![03](https://github.com/user-attachments/assets/93a476b6-73b5-47ab-b9df-d69e1e598f4b)
-
-![02](https://github.com/user-attachments/assets/7599665f-0407-4372-ae26-ce4d4bb74953)
-
-![01](https://github.com/user-attachments/assets/52cfbd0a-42d5-48ec-910c-49c06251b1c7)
-
-************************************************************************************************************************************
 
 
 
