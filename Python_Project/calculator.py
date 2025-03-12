@@ -21,15 +21,15 @@ if __name__ == "__main__":
     print("4. Divide")
 
     while True:
-        # Take input from the user
+     
         choice = input("Enter choice (1/2/3/4) or 'q' to quit: ")
         
-        # Check if user wants to exit
+     
         if choice == 'q':
             print("Goodbye!")
             break
         
-        # Check if choice is valid
+      
         if choice not in ['1', '2', '3', '4']:
             print("Invalid Input! Please try again.")
             continue
