@@ -118,7 +118,11 @@ After starting the web server, open http://127.0.0.1:5000/ in your browser.
 
 ## 🖼️ Screenshots
 
-*(Here you can add screenshots of the different calculator interfaces)*
+![01](https://github.com/user-attachments/assets/13e422e9-56fb-4a57-b399-6d7aa90f4daf)
+
+![02](https://github.com/user-attachments/assets/09878b92-d833-4601-8ced-97edd8528154)
+
+![03](https://github.com/user-attachments/assets/4b00c0a9-076e-4bc1-86d4-e4044867e25e)
 
 ## 📚 Lessons Learned
 
