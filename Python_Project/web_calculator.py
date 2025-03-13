@@ -32,7 +32,7 @@ def create_database():
             host='localhost',
             user='',
             password='',
-            # Use the native password authentication plugin
+          
             client_flag=pymysql.constants.CLIENT.MULTI_STATEMENTS
         )
         cursor = engine.cursor()
@@ -208,7 +208,7 @@ def logout():
 @login_required
 def user_settings():
     if request.method == 'POST':
-        # Update settings
+      
         current_user.settings.theme = request.form.get('theme')
         current_user.settings.decimal_places = int(request.form.get('decimal_places'))
         current_user.settings.scientific_notation = 'scientific_notation' in request.form
