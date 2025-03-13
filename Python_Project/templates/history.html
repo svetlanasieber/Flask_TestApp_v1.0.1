@@ -39,7 +39,7 @@
 
 <script>
     function useCalculation(calculation) {
-        // Store the calculation in localStorage for use in calculator
+   
         localStorage.setItem('lastCalculation', calculation);
         window.location.href = "{{ url_for('index') }}";
     }
