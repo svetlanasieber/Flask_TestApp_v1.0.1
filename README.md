@@ -150,11 +150,11 @@ The project is currently in active development with the following features being
 - Registration and login system still in testing phase
 
 
-## 📄 License
+##  License
 
 This project is licensed under the [MIT License](LICENSE).
 
-## 🤝 Contribution
+##  Contribution
 
 Contributions to the project are welcome! Please feel free to submit Pull Requests or open Issues.
 
