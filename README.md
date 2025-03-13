@@ -1,12 +1,12 @@
-# 🧮 Multi-platform Python Calculator
+# 🧮 Multi-platform Python Calculator [IN DEVELOPMENT]
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
 [![Flask](https://img.shields.io/badge/Flask-2.3.3-red.svg)](https://flask.palletsprojects.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-orange.svg)](https://www.mysql.com/)
+[![Status](https://img.shields.io/badge/Status-In%20Development-yellow.svg)]()
 
-
-
-
+> **Note:** This project is currently under active development. Some features may not be fully implemented or might contain bugs.
 
 ## 📝 Description
 
@@ -14,7 +14,7 @@ A multi-platform calculator developed in Python, demonstrating various approache
 
 1. **Console Calculator** - classic text interface
 2. **GUI Calculator** - graphical interface using Tkinter
-3. **Web Calculator** - modern interface accessible through a browser
+3. **Web Calculator** - modern interface accessible through a browser with user profiles and settings
 
 All implementations share the same calculation logic, showing how basic functionality can be adapted for different user interfaces.
 
@@ -23,6 +23,9 @@ All implementations share the same calculation logic, showing how basic function
 ### Backend
 - **Python** - main programming language
 - **Flask** - lightweight web framework for Python
+- **Flask-Login** - user authentication and session management
+- **SQLAlchemy** - ORM for database operations
+- **MySQL** - database for user profiles and settings
 - **Tkinter** - standard GUI library in Python
 
 ### Frontend (Web version)
@@ -39,6 +42,8 @@ All implementations share the same calculation logic, showing how basic function
 - **Separation of business logic and user interface**
 - **Modular structure** - reuse of core calculation logic
 - **REST API** - for frontend-backend communication in the web version
+- **MVC pattern** - Model-View-Controller architecture
+- **Database persistence** - for user data and settings
 
 ## ✨ Features
 
@@ -60,6 +65,9 @@ All implementations share the same calculation logic, showing how basic function
 - ⌨️ Keyboard shortcuts support
 - 💾 Last result storage
 - 🔍 Current operation visualization
+- 👤 User profiles with personalized settings
+- 📊 Calculation history
+- ⚙️ Customizable preferences (decimal places, scientific notation)
 
 ### GUI Interface
 - 🖥️ Native graphical interface
@@ -72,10 +80,15 @@ All implementations share the same calculation logic, showing how basic function
 .
 ├── calculator.py          # Base calculation logic and console interface
 ├── gui_calculator.py      # Tkinter GUI implementation
-├── web_calculator.py      # Flask web server
+├── web_calculator.py      # Flask web server with MySQL integration
+├── models.py              # Database models for user profiles
 ├── requirements.txt       # Project dependencies
 └── templates/
-    └── calculator.html    # HTML/CSS/JS for the web interface
+    ├── calculator.html    # HTML/CSS/JS for the web interface
+    ├── register.html      # User registration page
+    ├── login.html         # Login page
+    ├── settings.html      # User settings page
+    └── history.html       # Calculation history page
 ```
 
 ## 🚀 Installation and Launch
@@ -84,6 +97,7 @@ All implementations share the same calculation logic, showing how basic function
 
 - Python 3.x
 - pip (Python Package Installer)
+- MySQL Server (for web version with user profiles)
 
 ### Installation Steps
 
@@ -97,6 +111,10 @@ All implementations share the same calculation logic, showing how basic function
    ```bash
    pip install -r requirements.txt
    ```
+
+3. MySQL setup (for web version with user profiles):
+   - Ensure MySQL server is running
+   - Update the MySQL connection parameters in `web_calculator.py` if needed
 
 ### Running Different Versions
 
@@ -116,7 +134,24 @@ python web_calculator.py
 ```
 After starting the web server, open http://127.0.0.1:5000/ in your browser.
 
+## 🚧 Current Development Status
 
+The project is currently in active development with the following features being worked on:
+
+- **User Authentication System**: Registration, login, and session management
+- **MySQL Database Integration**: Storing user profiles, settings, and calculation history
+- **Personalized Settings**: Theme preferences, decimal place settings, scientific notation
+- **Calculation History**: Saving and viewing past calculations
+
+## 🔧 Known Issues
+
+- MySQL connection may require additional configuration depending on your setup
+- Some error handling in the calculation logic needs improvement
+- Registration and login system still in testing phase
+
+## 🖼️ Screenshots
+
+*(Here you can add screenshots of the different calculator interfaces)*
 
 ## 📚 Lessons Learned
 
@@ -126,6 +161,8 @@ This project demonstrates:
 - Integration between frontend and backend
 - Modern web design techniques
 - Effective user experience management
+- Database integration and user authentication
+- State management and personalization
 
 ## 📄 License
 
