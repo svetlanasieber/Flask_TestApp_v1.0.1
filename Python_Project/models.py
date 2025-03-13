@@ -26,10 +26,10 @@ class User(db.Model, UserMixin):
 class UserSettings(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-    theme = db.Column(db.String(20), default='standard')  # standard, dark, light
+    theme = db.Column(db.String(20), default='standard')  
     decimal_places = db.Column(db.Integer, default=2)
     scientific_notation = db.Column(db.Boolean, default=False)
-    calculation_history = db.Column(db.Text, default='[]')  # JSON string array
+    calculation_history = db.Column(db.Text, default='[]')  
     
     def add_calculation(self, calculation):
         """Add a calculation to the history"""
