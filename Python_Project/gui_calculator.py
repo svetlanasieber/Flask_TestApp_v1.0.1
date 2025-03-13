@@ -33,7 +33,7 @@ def equal_press():
     try:
         global expression
         
-      
+       
         if not expression:
             return
         
@@ -60,7 +60,7 @@ def equal_press():
         else:
             result = expression
             
-      
+       
         result_var.set(result)
         expression = str(result)
         
@@ -79,7 +79,6 @@ display = tk.Entry(frame, textvariable=result_var, font=("Arial", 20), bd=10, re
                   justify="right", bg="white")
 display.grid(row=0, column=0, columnspan=4, pady=10, sticky="nsew")
 
-# Create buttons
 button_params = {
     'font': ('Arial', 14),
     'bd': 5,
@@ -138,7 +137,6 @@ for i in range(6):
     frame.grid_rowconfigure(i, weight=1)
 for i in range(4):
     frame.grid_columnconfigure(i, weight=1)
-
 
 if __name__ == "__main__":
     window.mainloop() 
