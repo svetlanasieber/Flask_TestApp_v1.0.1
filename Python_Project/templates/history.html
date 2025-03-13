@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Calculation History - Multi-platform Calculator{% endblock %}
+
+{% block content %}
+<div class="history-container">
+    <h2>Calculation History</h2>
+    
+    {% if history %}
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>Calculation</th>
+                    <th>Date & Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in history|reverse %}
+                <tr>
+                    <td>{{ item.calculation }}</td>
+                    <td>{{ item.timestamp }}</td>
+                    <td>
+                        <button class="btn-small" onclick="useCalculation('{{ item.calculation }}')">Use</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p style="text-align: center; margin: 30px 0;">You don't have any saved calculations yet.</p>
+    {% endif %}
+    
+    <div class="actions">
+        <a href="{{ url_for('index') }}" class="btn-secondary">Back to Calculator</a>
+        <a href="{{ url_for('user_settings') }}" class="btn-secondary">Settings</a>
+    </div>
+</div>
+
+<script>
+    function useCalculation(calculation) {
+        // Store the calculation in localStorage for use in calculator
+        localStorage.setItem('lastCalculation', calculation);
+        window.location.href = "{{ url_for('index') }}";
+    }
+</script>
+{% endblock %} 
