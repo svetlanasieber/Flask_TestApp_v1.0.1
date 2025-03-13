@@ -1,4 +1,4 @@
-# 🧮 Multi-platform Python Calculator [IN DEVELOPMENT]
+# Multi-platform Python Calculator [IN DEVELOPMENT]
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
@@ -154,9 +154,7 @@ The project is currently in active development with the following features being
 
 This project is licensed under the [MIT License](LICENSE).
 
-##  Contribution
 
-Contributions to the project are welcome! Please feel free to submit Pull Requests or open Issues.
 
 
 
