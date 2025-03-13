@@ -8,7 +8,7 @@
 
 > **Note:** This project is currently under active development. Some features may not be fully implemented or might contain bugs.
 
-## 📝 Description
+##  Description
 
 A multi-platform calculator developed in Python, demonstrating various approaches to user interface development. The project includes three different calculator implementations:
 
@@ -45,7 +45,7 @@ All implementations share the same calculation logic, showing how basic function
 - **MVC pattern** - Model-View-Controller architecture
 - **Database persistence** - for user data and settings
 
-## ✨ Features
+##  Features
 
 ### Basic Operations
 - ➕ Addition
@@ -54,27 +54,27 @@ All implementations share the same calculation logic, showing how basic function
 - ➗ Division
 
 ### Advanced Functions
-- 🔄 Sign change (+/-)
-- 💯 Percentage conversion (%)
-- 🧹 Clear current input (C)
-- 🗑️ Full calculator reset (AC)
+ Sign change (+/-)
+Percentage conversion (%)
+ Clear current input (C)
+ Full calculator reset (AC)
 
 ### Web Interface
-- 🎨 Multiple color themes (light, dark, standard)
-- 📱 Responsive design
-- ⌨️ Keyboard shortcuts support
-- 💾 Last result storage
-- 🔍 Current operation visualization
-- 👤 User profiles with personalized settings
-- 📊 Calculation history
-- ⚙️ Customizable preferences (decimal places, scientific notation)
+ Multiple color themes (light, dark, standard)
+ Responsive design
+ Keyboard shortcuts support
+ Last result storage
+ Current operation visualization
+ User profiles with personalized settings
+ Calculation history
+ Customizable preferences (decimal places, scientific notation)
 
 ### GUI Interface
-- 🖥️ Native graphical interface
-- 🪟 Compact window with fixed size
-- 🎯 Intuitive button layout
+ Native graphical interface
+Compact window with fixed size
+ Intuitive button layout
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -91,7 +91,7 @@ All implementations share the same calculation logic, showing how basic function
     └── history.html       # Calculation history page
 ```
 
-## 🚀 Installation and Launch
+##  Installation and Launch
 
 ### Prerequisites
 
@@ -134,7 +134,7 @@ python web_calculator.py
 ```
 After starting the web server, open http://127.0.0.1:5000/ in your browser.
 
-## 🚧 Current Development Status
+##  Current Development Status
 
 The project is currently in active development with the following features being worked on:
 
@@ -143,24 +143,12 @@ The project is currently in active development with the following features being
 - **Personalized Settings**: Theme preferences, decimal place settings, scientific notation
 - **Calculation History**: Saving and viewing past calculations
 
-## 🔧 Known Issues
+##  Known Issues
 
 - MySQL connection may require additional configuration depending on your setup
 - Some error handling in the calculation logic needs improvement
 - Registration and login system still in testing phase
 
-
-
-## 📚 Lessons Learned
-
-This project demonstrates:
-- How the same logic can be implemented with different interfaces
-- Differences between console, GUI, and web applications
-- Integration between frontend and backend
-- Modern web design techniques
-- Effective user experience management
-- Database integration and user authentication
-- State management and personalization
 
 ## 📄 License
 
@@ -174,4 +162,3 @@ Contributions to the project are welcome! Please feel free to submit Pull Reques
 
 ---
 
-Developed with ❤️ and Python 
