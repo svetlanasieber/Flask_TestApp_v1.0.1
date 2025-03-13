@@ -42,7 +42,7 @@ def equal_press():
             num1, num2 = map(float, expression.split('+'))
             result = add(num1, num2)
         elif '-' in expression:
-            # Handle possible negative numbers by finding the last '-'
+          
             last_minus = expression.rfind('-', 1)
             if last_minus != -1:
                 num1 = float(expression[:last_minus])
