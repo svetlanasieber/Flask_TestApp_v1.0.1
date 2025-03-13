@@ -39,7 +39,7 @@ class UserSettings(db.Model):
             'timestamp': datetime.utcnow().isoformat()
         })
         
-        # Limit history to last 100 calculations
+      
         if len(history) > 100:
             history = history[-100:]
         
