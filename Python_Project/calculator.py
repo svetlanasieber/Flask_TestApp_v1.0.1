@@ -24,12 +24,12 @@ if __name__ == "__main__":
        
         choice = input("Enter choice (1/2/3/4) or 'q' to quit: ")
         
-      
+     
         if choice == 'q':
             print("Goodbye!")
             break
         
-     
+
         if choice not in ['1', '2', '3', '4']:
             print("Invalid Input! Please try again.")
             continue
