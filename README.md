@@ -150,10 +150,6 @@ The project is currently in active development with the following features being
 - Registration and login system still in testing phase
 
 
-##  License
-
-This project is licensed under the [MIT License](LICENSE).
-
 
 
 
