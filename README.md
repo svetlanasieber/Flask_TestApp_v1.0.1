@@ -149,9 +149,7 @@ The project is currently in active development with the following features being
 - Some error handling in the calculation logic needs improvement
 - Registration and login system still in testing phase
 
-## 🖼️ Screenshots
 
-*(Here you can add screenshots of the different calculator interfaces)*
 
 ## 📚 Lessons Learned
 
@@ -172,9 +170,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 Contributions to the project are welcome! Please feel free to submit Pull Requests or open Issues.
 
-## 📧 Contact
 
-*(Here you can add your contact information)*
 
 ---
 
